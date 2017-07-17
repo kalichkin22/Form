@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Формы</title>
+</head>
+<body>
+<form class="form" method="get">
+    <div>
+        <label for="firstName"><span>Имя</span></label>
+        <input type="text" id="firstName" name="firstName" autofocus required/>
+    </div>
+
+    <div>
+        <label for="lastName"><span>Фамилия</span></label>
+        <input type="text" id="lastName" name="lastName" autofocus required/>
+    </div>
+
+    <div>
+        <label>
+            <span>Страна</span>
+            <select>
+                <option>ComboBox</option>
+                <option>Россия</option>
+                <option>Япония</option>
+                <option>США</option>
+            </select>
+        </label>
+    </div>
+
+    <div>
+        <label for="news"><span>Подписка на новости</span></label>
+        <input type="checkbox" id="news" name="news"/> Checkbox
+    </div>
+
+    <div>
+        <span>Образование</span>
+        <div class="combo">
+            <div>
+                <label>
+                    <input type="radio" name="education" value="Начальное (selected)" checked="checked">
+                    Начальное (selected)
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="education" value="Школа(9)">
+                    Школа(9)
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="education" value="Школа(11)">
+                    Школа(11)
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="education" value="Среднее">
+                    Среднее
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="education" value="Высшее">
+                    Высшее
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <span>О себе</span>
+        <label>
+            <textarea rows="5" cols="20" name="text"></textarea>
+        </label>
+    </div>
+    <div>
+        <input type="reset"/>
+
+        <input type="submit"/>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.form span, .combo {
+    display: inline-table;
+    width: 150px;
+}
+
+div {
+    margin-top: 10px;
+}
+
+input:required:invalid {
+    border:1px solid red;
+}
